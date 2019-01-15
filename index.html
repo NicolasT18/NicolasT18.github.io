@@ -2,26 +2,75 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
   <title>CV Numérique</title>
 </head>
 <body>
-  <div class="pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <h5 class="text-white h4">Collapsed content</h5>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
+  <div class="container-fluid">
+    <div class="top row">
+        <div class="githeader col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <a href="https://github.com/NicolasT18/"><img class="logogithead" src="assets/img/gitlogo.png" alt="githead"> </a>
+        </div>
+        <div class="presheader col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <div class="toppres">
+            <h1 class="titletop">Texier Nicolas</h1>
+            <h2 class="titletop">Développeur web FullStack Junior</h2>
+            <h2 class="titletop">Apprenant E2N</h2>
+          </div>
+          <div class="downpres">
+            <input class="cvpdf" type="submit" value="CV PDF" />
+            <input class="embauche" type="submit" value="Embauchez-moi" />
+            <input class="contact" type="submit" value="Contact" />
+          </div>
+        </div>
+        <div class="inheader col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <a href="https://github.com/NicolasT18/"><img class="logolinkhead" src="assets/img/linkedInlogo.png" alt="Mon GitHub" title="Mon GitHub" /></a>
+        </div>
+    </div>
+    <!-- Fint de header -->
+    <!-- Début de navbar -->
+    <div class="row">
+      <div class="cadrenav col-4 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="topnav row" id="navbar">
+          <div class="lefttopnav col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="#top"><img class="navpng" src="assets/img/home.png" alt="home"></a>
+          </div>
+          <div class="centertopnav col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="#comp">Compétences</a>
+            <a href="#Moi">Moi</a>
+            <a href="#Expériences">Expériences</a>
+            <a href="#Formations">Formations</a>
+          </div>
+          <div class="righttopnav col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="#Contact"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
+          </div>
+        </div>
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
+    <!-- Fint de la navbar -->
+    <!-- Début du menu -->
+    <div class="select row">
+      <!-- <div class="selectme col-4 col-sm-4 col-md-4 offset-lg-1 col-lg-4 col-xl-4">
+        <a href="#Moi">Moi</a>
+      </div>
+      <div class="selectcomp col-4 col-sm-4 col-md-4 offset-lg-2 col-lg-4 col-xl-4">
+        <a href="#comp">Compétences</a>
+      </div>
+      <div class="selectexp col-4 col-sm-4 col-md-4 offset-lg-1 col-lg-4 col-xl-4">
+        <a href="#Expériences">Expériences</a>
+      </div>
+      <div class="selectform col-4 col-sm-4 col-md-4 offset-lg-2 col-lg-4 col-xl-4">
+        <a href="#formations">Formations</a>
+      </div> -->
+      <a class="col-4 col-sm-4 col-md-4 offset-lg-1 col-lg-4 col-xl-4" href="#Moi"><div class="selectme">Moi</div></a>
+      <a class="col-4 col-sm-4 col-md-4 offset-lg-2 col-lg-4 col-xl-4" href="#comp"><div class="selectcomp">Compétences</div></a>
+      <a class="col-4 col-sm-4 col-md-4 offset-lg-1 col-lg-4 col-xl-4" href="#exp"><div class="selectexp">Expériences</div></a>
+      <a class="col-4 col-sm-4 col-md-4 offset-lg-2 col-lg-4 col-xl-4" href="#formations"><div class="selectform">Formations</div></a>
+    </div>
   </div>
 </body>
 </html>

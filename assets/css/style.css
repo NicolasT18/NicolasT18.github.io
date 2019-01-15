@@ -1,0 +1,87 @@
+
+@media screen and (min-width:1500px){
+}
+@font-face {
+  font-family: "title";
+  src:url("../fonts/title.ttf");
+}
+@font-face {
+    font-family: "select";
+    src: url("../fonts.select.ttf");
+}
+.top{
+  height: 25rem;
+  background-image: url("../img/backgroundtop.png");
+}
+.logogithead{
+  width: 30%;
+  float: right;
+  margin-top: 18%;
+}
+.presheader{
+  text-align: center;
+}
+.toppres{
+  margin-top: 20%;
+}
+.titletop{
+  font-size: 2.7em;
+  color: white;
+  font-family: "title";
+  text-shadow: 4px 2px black;
+}
+.downpres{
+  margin-top: 10%;
+}
+.logolinkhead{
+  width: 32%;
+  margin-top: 15%;
+}
+/* Fint du top */
+/* Début de la navbar */
+.cadrenav{
+  height: 1em;
+}
+.topnav{
+  height: 2em;
+  background-color: #4ee7d0;
+}
+.topnav a{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.topnav div{
+  text-align: center;
+}
+.navpng{
+  width: 2em;
+}
+/* Fint de la navbar */
+/* Début du menu */
+.select{
+  background-color: #c9cacc;
+  height: 32.9em;
+}
+.select a div{
+  height: 80%;
+  padding-top: 12%;
+  margin-top: 0.8em;
+  font-size: 3em;
+  font-family: "title";
+  text-shadow: 4px 2px black;
+  text-align: center;
+  background-size: 100%;
+  background-position-y: 60%;
+}
+.selectme{
+  background-image: url("../img/selectmoi.jpeg");
+}
+.selectcomp{
+  background-image: url("../img/selectcomp.jpeg");
+}
+.selectexp{
+  background-image: url("../img/selectexp.jpg");
+}
+.selectform{
+  background-image: url("../img/selectform.jpeg");
+}
