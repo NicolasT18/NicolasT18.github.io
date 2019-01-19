@@ -1,4 +1,3 @@
-
 @media screen and (min-width:1500px){
 }
 @font-face {
@@ -8,6 +7,12 @@
 @font-face {
     font-family: "select";
     src: url("../fonts.select.ttf");
+}
+body{
+  background-color: #c9cacc;
+}
+a{
+  outline-style: none;
 }
 .top{
   height: 25rem;
@@ -40,32 +45,38 @@
 /* Fint du top */
 /* Début de la navbar */
 .cadrenav{
-  height: 1em;
+  height: 2.5em;
 }
 .topnav{
-  height: 2em;
+  height: 2.5em;
   background-color: #4ee7d0;
 }
-.topnav a{
-  margin-left: 1em;
-  margin-right: 1em;
+.lefttopnav{
+  text-align: right;
 }
-.topnav div{
+.centertopnav div{
+  width: 25%;
+  height: 100%;
+  float: left;
   text-align: center;
+  line-height: 2.5em;
+}
+.righttopnav{
+  text-align: left;
 }
 .navpng{
   width: 2em;
+  padding-top: 1%;
 }
 /* Fint de la navbar */
 /* Début du menu */
 .select{
-  background-color: #c9cacc;
-  height: 32.9em;
+  height: 31.4em;
 }
 .select a div{
   height: 80%;
   padding-top: 12%;
-  margin-top: 0.8em;
+  margin-top: 0.5em;
   font-size: 3em;
   font-family: "title";
   text-shadow: 4px 2px black;
@@ -84,4 +95,32 @@
 }
 .selectform{
   background-image: url("../img/selectform.jpeg");
+}
+/* Fint du menu */
+/* Début de me */
+.photomoipng{
+  width: 50%;
+}
+.sepme{
+  border-top: 0.1em solid black;
+}
+.informationmoi{
+  font-size: 325%;
+}
+.sepme{
+  margin-left: 2%;
+}
+.cadrephotomoi{
+  border-right: 1px solid black;
+}
+.sepdownmoi{
+  width: 100%;
+}
+.sepdownme{
+  border-top: 0.1em solid black;
+}
+.presdownmoi{
+  margin-top: 0.5%;
+  font-size: 150%;
+  padding-left: 1.5%;
 }
