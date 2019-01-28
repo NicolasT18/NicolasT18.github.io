@@ -1,5 +1,4 @@
-@media screen and (min-width:1500px){
-}
+
 @font-face {
   font-family: "title";
   src:url("../fonts/title.ttf");
@@ -8,8 +7,10 @@
     font-family: "select";
     src: url("../fonts.select.ttf");
 }
+@media screen and (min-width:1500px){
+}
 body{
-  background-color: #c9cacc;
+  background-color: #242730;
 }
 a{
   outline-style: none;
@@ -19,9 +20,9 @@ a{
   background-image: url("../img/backgroundtop.png");
 }
 .logogithead{
-  width: 30%;
+  width: 33%;
+  margin-top: 15%;
   float: right;
-  margin-top: 18%;
 }
 .presheader{
   text-align: center;
@@ -53,36 +54,61 @@ a{
 }
 .lefttopnav{
   text-align: right;
+  padding-right: 0%;
 }
 .centertopnav div{
   width: 25%;
   height: 100%;
   float: left;
   text-align: center;
-  line-height: 2.5em;
+  line-height: 3em;
+  font-size: 80%;
+  color: black;
+  font-family: "title";
+  text-shadow: 2px 2px white;
+  transition-duration: 0.4s;
+}
+.centertopnav div:hover{
+  background-color: #007bff;
+  border-radius: 3em;
+  transition-duration: 0.4s;
 }
 .righttopnav{
   text-align: left;
+  padding-left: 0%;
 }
 .navpng{
   width: 2em;
-  padding-top: 1%;
+  padding-top: 0.3em;
+  transition-duration: 0.3s;
+}
+.navpng:hover{
+  width: 2.7em;
+  padding-top: 0em;
+  transition-duration: 0.3s;
 }
 /* Fint de la navbar */
 /* Début du menu */
 .select{
-  height: 31.4em;
+  min-height: 31.4em;
 }
 .select a div{
   height: 80%;
-  padding-top: 12%;
+  line-height: 4.5em;
   margin-top: 0.5em;
   font-size: 3em;
   font-family: "title";
   text-shadow: 4px 2px black;
   text-align: center;
-  background-size: 100%;
+  background-size: 200%;
   background-position-y: 60%;
+  background-position-x: 50%;
+  transition-duration: 0.3s;
+}
+.select a div:hover{
+/*   border-radius: 3em; */
+  background-size: 250%;
+  transition-duration: 0.3s;
 }
 .selectme{
   background-image: url("../img/selectmoi.jpeg");
@@ -98,14 +124,29 @@ a{
 }
 /* Fint du menu */
 /* Début de me */
+.topmoi{
+  margin-top: 1em;
+}
+.cadrephotomoi{
+  text-align: center;
+  vertical-align: middle;
+}
 .photomoipng{
-  width: 50%;
+  max-width: 42em;
+  width: 100%;
+  border-radius: 50%;
 }
 .sepme{
   border-top: 0.1em solid black;
 }
 .informationmoi{
   font-size: 325%;
+  color: white;
+  text-shadow: 4px 2px black;
+}
+.ligneinfomoi{
+  color: white;
+  text-shadow: 3px 2px black;
 }
 .sepme{
   margin-left: 2%;
@@ -123,4 +164,6 @@ a{
   margin-top: 0.5%;
   font-size: 150%;
   padding-left: 1.5%;
+  color: white;
+  text-shadow: 4px 2px black;
 }
