@@ -106,7 +106,7 @@ a{
   transition-duration: 0.3s;
 }
 .select a div:hover{
-/*   border-radius: 3em; */
+  border-radius: 3em;
   background-size: 250%;
   transition-duration: 0.3s;
 }
@@ -126,6 +126,7 @@ a{
 /* Début de me */
 .topmoi{
   margin-top: 1em;
+  min-height: 30em;
 }
 .cadrephotomoi{
   text-align: center;
@@ -134,7 +135,13 @@ a{
 .photomoipng{
   max-width: 42em;
   width: 100%;
+  margin-top: 1em;
   border-radius: 50%;
+  transition-duration: 0.3s;
+}
+.photomoipng:hover{
+  border-radius: 20%;
+  transition-duration: 0.3s;
 }
 .sepme{
   border-top: 0.1em solid black;
@@ -145,17 +152,20 @@ a{
   text-shadow: 4px 2px black;
 }
 .ligneinfomoi{
+  margin-top: 1em;
   color: white;
   text-shadow: 3px 2px black;
+  transition-duration: 0.3s;
+}
+.ligneinfomoi:hover{
+  font-size: 120%;
+  transition-duration: 0.3s;
 }
 .sepme{
   margin-left: 2%;
 }
 .cadrephotomoi{
   border-right: 1px solid black;
-}
-.sepdownmoi{
-  width: 100%;
 }
 .sepdownme{
   border-top: 0.1em solid black;
@@ -167,3 +177,146 @@ a{
   color: white;
   text-shadow: 4px 2px black;
 }
+/* Fint de me */
+/* Début de comp */
+.titlecomp{
+  height: 1.6em;
+  font-size: 3em;
+  color: white;
+  text-shadow: 4px 2px black;
+  text-align: center;
+}
+.topcomp div{
+  float: left;
+}
+.frontendcomp{
+  height: 30em;
+  border-right: 0.1em solid black;
+}
+.frontendtitle{
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+.htmldiv{
+  width: 100%;
+  margin-top: 3%;
+}
+.htmltitle{
+  color: white;
+}
+.htmlprogress{
+  width: 100%;
+}
+.progressbarhtml{
+  width: 90%;
+}
+.cssdiv{
+  width: 100%;
+  height: 10%;
+  margin-top: 3%;
+}
+.csstitle{
+  color: white;
+}
+.cssprogress{
+  width: 100%;
+}
+.progressbarcss{
+  width: 90%;
+}
+.backendcomp{
+  height: 30em;
+}
+.backendtitle{
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+.sepcompdown{
+  border-top: 0.1em solid black;
+}
+.downcomp{
+  height: 10em;
+  margin-top: 0.5em;
+}
+.syscomp{
+  height: 70%;
+}
+.syscomp div{
+  float: left;
+}
+.syscomptitle{
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+.windowscomp{
+  height: 90%;
+}
+.progresswindows{
+  width: 80%;
+  height: 30%;
+  margin-top: 4%;
+  margin-left: 10%;
+  background-color: #041634;
+  border-radius: 1em;
+}
+.namewindows{
+  width: 15%;
+  font-size: 70%;
+  color: white;
+  line-height: 2.5em;
+  text-align: center;
+}
+.progressbarwindows{
+  width: 69.5%;
+  height: 100%;
+  background-color: #0b46a3;
+  border-bottom-left-radius: 2em;
+}
+.pourcentagewindows{
+  width: 15.5%;
+  height: 100%;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  background-color: #aaa699;
+  text-align: right;
+  padding-right: 1%;
+  line-height: 2em;
+}
+.ubuntucomp{
+  height: 90%;
+}
+.progressubuntu{
+  width: 80%;
+  height: 30%;
+  margin-top: 4%;
+  margin-left: 10%;
+  background-color: #041634;
+  border-radius: 1em;
+}
+.nameubuntu{
+  width: 15%;
+  font-size: 70%;
+  color: white;
+  line-height: 2.5em;
+  text-align: center;
+}
+.progressbarubuntu{
+  width: 60%;
+  height: 100%;
+  background-color: #0b46a3;
+  border-bottom-left-radius: 2em;
+}
+.pourcentageubuntu{
+  width: 25%;
+  height: 100%;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  background-color: #aaa699;
+  text-align: right;
+  padding-right: 1%;
+  line-height: 2em;
+}
+/* Fint de comp */
