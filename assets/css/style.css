@@ -7,28 +7,52 @@
     font-family: "select";
     src: url("../fonts.select.ttf");
 }
-@media screen and (min-width:1500px){
+@media screen and (max-width:993px){
+  .githeader, .inheader{
+    display: none;
+  }
 }
+@media screen and (min-width:768px){
+  .frontendcomp{
+    border-right: 0.1em solid black;
+  }
+  .cadrephotomoi{
+    border-right: 0.1em solid black;
+  }
+}
+/* @media screen and (min-width:514px){
+  .centertopnav{
+  line-height: 2em;
+  font-size: 120%; 
+  }
+}
+@media screen and (max-width:514px){
+  .centertopnav{
+  line-height: 2.8em;
+  font-size: 90%; 
+  }
+} */
 body{
   background-color: #242730;
 }
 a{
   outline-style: none;
 }
+/* Début du top */
 .top{
   height: 25rem;
   background-image: url("../img/backgroundtop.png");
 }
 .logogithead{
-  width: 33%;
-  margin-top: 15%;
+  width: 10em;
+  margin-top: 7em;
   float: right;
 }
 .presheader{
   text-align: center;
 }
 .toppres{
-  margin-top: 20%;
+  margin-top: 5em;
 }
 .titletop{
   font-size: 2.7em;
@@ -40,8 +64,8 @@ a{
   margin-top: 10%;
 }
 .logolinkhead{
-  width: 32%;
-  margin-top: 15%;
+  width: 10em;
+  margin-top: 7em;
 }
 /* Fint du top */
 /* Début de la navbar */
@@ -61,10 +85,10 @@ a{
   height: 100%;
   float: left;
   text-align: center;
-  line-height: 3em;
-  font-size: 80%;
   color: black;
   font-family: "title";
+  line-height: 2em;
+  font-size: 120%;
   text-shadow: 2px 2px white;
   transition-duration: 0.4s;
 }
@@ -130,11 +154,10 @@ a{
 }
 .cadrephotomoi{
   text-align: center;
-  vertical-align: middle;
 }
 .photomoipng{
-  max-width: 42em;
   width: 100%;
+  max-width: 42em;
   margin-top: 1em;
   border-radius: 50%;
   transition-duration: 0.3s;
@@ -164,9 +187,6 @@ a{
 .sepme{
   margin-left: 2%;
 }
-.cadrephotomoi{
-  border-right: 1px solid black;
-}
 .sepdownme{
   border-top: 0.1em solid black;
 }
@@ -191,7 +211,6 @@ a{
 }
 .frontendcomp{
   height: 30em;
-  border-right: 0.1em solid black;
 }
 .frontendtitle{
   font-size: 2em;
