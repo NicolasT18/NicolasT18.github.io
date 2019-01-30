@@ -37,6 +37,24 @@ body{
 a{
   outline-style: none;
 }
+/* Début du bouton top */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1.5em;
+    border: none;
+    background-image: url(../img/topBtn.png);
+    background-size: 100%;
+    cursor: pointer;
+    padding: 1.3em;
+    border-radius: 3em;
+    font-size: 1.1em;
+}
+#topBtn:hover {
+    background-color: #555;
+}
+/* Fint du bouton top */
 /* Début du top */
 .top{
   height: 25rem;
@@ -46,12 +64,19 @@ a{
   width: 10em;
   margin-top: 7em;
   float: right;
+  transition-duration: 0.3s;
+}
+.logogithead:hover{
+  width: 12em;
+  margin-top: 6em;
+  transition-duration: 0.3s;
 }
 .presheader{
   text-align: center;
 }
 .toppres{
   margin-top: 5em;
+  background: radial-gradient(#1272B8,40%, #0000);
 }
 .titletop{
   font-size: 2.7em;
@@ -61,10 +86,17 @@ a{
 }
 .downpres{
   margin-top: 10%;
+  font-family: "select";
 }
 .logolinkhead{
   width: 10em;
   margin-top: 7em;
+  transition-duration: 0.3s;
+}
+.logolinkhead:hover{
+  width: 12em;
+  margin-top: 6em;
+  transition-duration: 0.3s;
 }
 /* Fint du top */
 /* Début de la navbar */
@@ -73,7 +105,7 @@ a{
 }
 .topnav{
   height: 2.5em;
-  background-color: #3ab29e;
+  background-color: #297E6F;
 }
 .lefttopnav{
   text-align: right;
@@ -84,9 +116,9 @@ a{
   height: 100%;
   float: left;
   text-align: center;
-  color: black;
   font-family: "title";
-  text-shadow: 2px 2px white;
+  color: white;
+  text-shadow: 2px 2px black;
   transition-duration: 0.4s;
 }
 .centertopnav div:hover{
@@ -106,29 +138,10 @@ a{
 .navpng:hover{
   width: 2.7em;
   padding-top: 0em;
+  cursor: pointer;
   transition-duration: 0.3s;
 }
 /* Fint de la navbar */
-/* Début du bouton top */
-.topBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background:#6C5C53;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-}
-.topBtn:hover {
-    background-color: #555;
-}
-/* Fint du bouton top */
 /* Début du menu */
 .select{
   min-height: 31.4em;

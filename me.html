@@ -23,9 +23,9 @@
           <h2 class="titletop">Apprenant E2N</h2>
         </div>
         <div class="downpres">
-          <input class="cvpdf" type="submit" value="CV PDF" />
-          <input class="embauche" type="submit" value="Embauchez-moi" />
-          <input class="contact" type="submit" value="Contact" />
+          <input class="cvBtn" type="submit" onclick="self.location.href='assets/file/CV(pdf).PDF'" value="CV PDF" />
+          <input class="hireBtn" type="submit" onclick="hireFunction()" value="Embauchez-moi" />
+          <input class="contactBtn" type="submit" onclick="contactFunction()" value="Contact" />
         </div>
       </div>
       <div class="inheader col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3">
@@ -95,6 +95,7 @@
       </div>
     </div>
   </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"></button>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
