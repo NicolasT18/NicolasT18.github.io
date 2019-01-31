@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "title";
   src:url("../fonts/title.ttf");
@@ -19,25 +18,51 @@
   .cadrephotomoi{
     border-right: 0.1em solid black;
   }
+  .expDivCardHr {
+  background-color: black;
 }
-/* @media screen and (min-width:514px){
+}
+@media screen and (max-width:767px){
+  .expDivCard{
+  border-top: 0.04em solid black;
+}
+}
+@media screen and (min-width:551px){
   .centertopnav{
   line-height: 2em;
-  font-size: 120%; 
+  font-size: 120%;
   }
 }
-@media screen and (max-width:514px){
+@media screen and (max-width:550px){
   .centertopnav{
-  line-height: 2.8em;
-  font-size: 90%; 
+  line-height: 3em;
+  font-size: 90%;
   }
-} */
+}
 body{
   background-color: #242730;
 }
 a{
   outline-style: none;
 }
+/* Début du bouton top */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1.5em;
+    border: none;
+    background-image: url(../img/topBtn.png);
+    background-size: 100%;
+    cursor: pointer;
+    padding: 1.3em;
+    border-radius: 3em;
+    font-size: 1.1em;
+}
+#topBtn:hover {
+    background-color: #555;
+}
+/* Fint du bouton top */
 /* Début du top */
 .top{
   height: 25rem;
@@ -47,12 +72,19 @@ a{
   width: 10em;
   margin-top: 7em;
   float: right;
+  transition-duration: 0.3s;
+}
+.logogithead:hover{
+  width: 12em;
+  margin-top: 6em;
+  transition-duration: 0.3s;
 }
 .presheader{
   text-align: center;
 }
 .toppres{
   margin-top: 5em;
+  background: radial-gradient(#1272B8,40%, #0000);
 }
 .titletop{
   font-size: 2.7em;
@@ -62,19 +94,27 @@ a{
 }
 .downpres{
   margin-top: 10%;
+  font-family: "select";
 }
 .logolinkhead{
   width: 10em;
   margin-top: 7em;
+  transition-duration: 0.3s;
+}
+.logolinkhead:hover{
+  width: 12em;
+  margin-top: 6em;
+  transition-duration: 0.3s;
 }
 /* Fint du top */
 /* Début de la navbar */
 .cadrenav{
+  width: 99.2%;
   height: 2.5em;
 }
 .topnav{
   height: 2.5em;
-  background-color: #4ee7d0;
+  background-color: #297E6F;
 }
 .lefttopnav{
   text-align: right;
@@ -85,11 +125,9 @@ a{
   height: 100%;
   float: left;
   text-align: center;
-  color: black;
   font-family: "title";
-  line-height: 2em;
-  font-size: 120%;
-  text-shadow: 2px 2px white;
+  color: white;
+  text-shadow: 2px 2px black;
   transition-duration: 0.4s;
 }
 .centertopnav div:hover{
@@ -109,7 +147,15 @@ a{
 .navpng:hover{
   width: 2.7em;
   padding-top: 0em;
+  cursor: pointer;
   transition-duration: 0.3s;
+}
+.sticky{
+  width: 105%;
+  padding-right: 4.2%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 /* Fint de la navbar */
 /* Début du menu */
@@ -197,6 +243,9 @@ a{
   color: white;
   text-shadow: 4px 2px black;
 }
+.carouselMe{
+  height: 40em;
+}
 /* Fint de me */
 /* Début de comp */
 .titlecomp{
@@ -209,6 +258,7 @@ a{
 .topcomp div{
   float: left;
 }
+
 .frontendcomp{
   height: 30em;
 }
@@ -339,3 +389,45 @@ a{
   line-height: 2em;
 }
 /* Fint de comp */
+/* Début de Expériences */
+.expTitle{
+  height: 1.6em;
+  font-size: 3em;
+  color: white;
+  text-shadow: 4px 2px black;
+  text-align: center;
+}
+.expCard{
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 2em;
+}
+.expCardContent{
+  width: 100%;
+  height: 100%;
+  box-shadow: 8px 8px 0px #aaa;
+}
+.expDivCard{
+  height: 10em;
+  float: left;
+  background-color: #546e7a;
+  color: white;
+}
+.expDivCard h2, .expDivCard h5, .expDivCard p, .expDivCard ul{
+  margin-left: 4%;
+  margin-top: 2%;
+}
+.expDivCard h2{
+  font-weight : bolder;
+}
+.expDivCard h4{
+  margin-left: 6%;
+  font-weight : bolder;
+}
+.expDivCardHr {
+  width: 0.04em;
+  height:85%;
+  margin-top: 2%;
+  float: left;
+}
+/* Fint de Expériences */
