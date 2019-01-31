@@ -12,17 +12,23 @@
   }
 }
 @media screen and (min-width:768px){
-  .frontendcomp{
-    border-right: 0.1em solid black;
-  }
   .cadrephotomoi{
     border-right: 0.1em solid black;
+  }
+  .compDivLeft{
+    border-right: 0.1em solid black;
+  }
+  .compOS{
+    margin-bottom: -1.5em;
   }
   .expDivCardHr {
   background-color: black;
 }
 }
 @media screen and (max-width:767px){
+  .compOS{
+    margin-bottom: 4em;
+  }
   .expDivCard{
   border-top: 0.04em solid black;
 }
@@ -58,6 +64,8 @@ a{
     padding: 1.3em;
     border-radius: 3em;
     font-size: 1.1em;
+    outline-style:none;
+    z-index: 1;
 }
 #topBtn:hover {
     background-color: #555;
@@ -181,16 +189,16 @@ a{
   transition-duration: 0.3s;
 }
 .selectme{
-  background-image: url("../img/selectmoi.jpeg");
+  background-image: url("../img/index/selectmoi.jpeg");
 }
 .selectcomp{
-  background-image: url("../img/selectcomp.jpeg");
+  background-image: url("../img/index/selectcomp.jpeg");
 }
 .selectexp{
-  background-image: url("../img/selectexp.jpg");
+  background-image: url("../img/index/selectexp.jpg");
 }
 .selectform{
-  background-image: url("../img/selectform.jpeg");
+  background-image: url("../img/index/selectform.jpeg");
 }
 /* Fint du menu */
 /* Début de me */
@@ -244,7 +252,11 @@ a{
   text-shadow: 4px 2px black;
 }
 .carouselMe{
-  height: 40em;
+  padding: 0;
+}
+.carouselLegend{
+  background: radial-gradient(#000000,70%, #0000);
+  border-radius: 50%;
 }
 /* Fint de me */
 /* Début de comp */
@@ -255,52 +267,81 @@ a{
   text-shadow: 4px 2px black;
   text-align: center;
 }
+.compOS{
+  height: 10em;
+  margin-top: 4em;
+}
+.progressBar{
+  width: 80%;
+  height: 30%;
+  margin-top: 4%;
+  margin-left: 10%;
+  background-color: #041634;
+  border-radius: 1em;
+}
+.nameProgressBar{
+  width: 15%;
+  font-size: 70%;
+  color: white;
+  line-height: 2.5em;
+  text-align: center;
+}
+.progressBarDiv{
+  height: 90%;
+}
+.progressBarLvl{
+  height: 100%;
+  background-color: #0b46a3;
+  border-bottom-left-radius: 2em;
+}
+.pourcentageLvl{
+  height: 100%;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  background-color: #aaa699;
+  text-align: right;
+  padding-right: 1%;
+  line-height: 2em;
+}
+.progressBarWindowsLvl{
+  width: 69.5%;
+}
+.pourcentageWindows{
+  width: 15.5%;
+}
+.progressBarUbuntuLvl{
+  width: 60%;
+}
+.pourcentageUbuntu{
+  width: 25%;
+}
 .topcomp div{
   float: left;
 }
-
-.frontendcomp{
-  height: 30em;
+.compDivLeft{
+  height: 20em;
 }
-.frontendtitle{
+.compDivRight{
+  height: 20em;
+}
+.compDivTitle{
   font-size: 2em;
   color: white;
   text-align: center;
+  text-shadow: 4px 2px black;
 }
-.htmldiv{
+.compDiv{
   width: 100%;
   margin-top: 3%;
 }
-.htmltitle{
+.compTitle{
   color: white;
 }
-.htmlprogress{
+.compProgress{
   width: 100%;
 }
-.progressbarhtml{
+.compProgressbar{
   width: 90%;
-}
-.cssdiv{
-  width: 100%;
-  height: 10%;
-  margin-top: 3%;
-}
-.csstitle{
-  color: white;
-}
-.cssprogress{
-  width: 100%;
-}
-.progressbarcss{
-  width: 90%;
-}
-.backendcomp{
-  height: 30em;
-}
-.backendtitle{
-  font-size: 2em;
-  color: white;
-  text-align: center;
 }
 .sepcompdown{
   border-top: 0.1em solid black;
@@ -315,78 +356,22 @@ a{
 .syscomp div{
   float: left;
 }
-.syscomptitle{
+.versioComptitle{
   font-size: 2em;
   color: white;
   text-align: center;
+  text-shadow: 4px 2px black;
 }
-.windowscomp{
-  height: 90%;
-}
-.progresswindows{
-  width: 80%;
-  height: 30%;
-  margin-top: 4%;
-  margin-left: 10%;
-  background-color: #041634;
-  border-radius: 1em;
-}
-.namewindows{
-  width: 15%;
-  font-size: 70%;
-  color: white;
-  line-height: 2.5em;
-  text-align: center;
-}
-.progressbarwindows{
-  width: 69.5%;
-  height: 100%;
-  background-color: #0b46a3;
-  border-bottom-left-radius: 2em;
-}
-.pourcentagewindows{
-  width: 15.5%;
-  height: 100%;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  background-color: #aaa699;
-  text-align: right;
-  padding-right: 1%;
-  line-height: 2em;
-}
-.ubuntucomp{
-  height: 90%;
-}
-.progressubuntu{
-  width: 80%;
-  height: 30%;
-  margin-top: 4%;
-  margin-left: 10%;
-  background-color: #041634;
-  border-radius: 1em;
-}
-.nameubuntu{
-  width: 15%;
-  font-size: 70%;
-  color: white;
-  line-height: 2.5em;
-  text-align: center;
-}
-.progressbarubuntu{
+.progressBarGithubLvl{
   width: 60%;
-  height: 100%;
-  background-color: #0b46a3;
-  border-bottom-left-radius: 2em;
 }
-.pourcentageubuntu{
+.pourcentageGithub{
   width: 25%;
-  height: 100%;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  background-color: #aaa699;
-  text-align: right;
-  padding-right: 1%;
-  line-height: 2em;
+}
+.progressBarGitlabLvl{
+}
+.pourcentageGitlab{
+  width: 85%;
 }
 /* Fint de comp */
 /* Début de Expériences */

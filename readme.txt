@@ -2,8 +2,6 @@
 
 (5) : Section Moi à finir
 
-(5.1) : Section Compétence à finir
-
 (5.1.1) : Btn Contact et Embauchez-moi
 
 (5.2) : Retirer les infos inutile du CV
@@ -18,15 +16,7 @@
 (5){
     - Changement de la photo
     - Remplir la présentation
-    - Ajout des hobbies (caroussel)https://getbootstrap.com/docs/4.2/components/carousel/1878×640
 }
-
-
-
-(5.1){
-    -Ajout des partie : éditeur de texte, versionning, framework, CMS
-}
-
 
 
 
