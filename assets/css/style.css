@@ -51,6 +51,13 @@ body{
 a{
   outline-style: none;
 }
+.title{
+  height: 1.6em;
+  font-size: 3em;
+  color: white;
+  text-shadow: 4px 2px black;
+  text-align: center;
+}
 /* Début du bouton top */
 #topBtn {
     display: none;
@@ -170,6 +177,9 @@ a{
 .select{
   min-height: 31.4em;
 }
+.select a{
+  text-decoration: none;
+}
 .select a div{
   height: 80%;
   line-height: 4.5em;
@@ -251,22 +261,12 @@ a{
   color: white;
   text-shadow: 4px 2px black;
 }
-.carouselMe{
-  padding: 0;
-}
 .carouselLegend{
   background: radial-gradient(#000000,70%, #0000);
   border-radius: 50%;
 }
 /* Fint de me */
 /* Début de comp */
-.titlecomp{
-  height: 1.6em;
-  font-size: 3em;
-  color: white;
-  text-shadow: 4px 2px black;
-  text-align: center;
-}
 .compOS{
   height: 10em;
   margin-top: 4em;
@@ -319,10 +319,10 @@ a{
   float: left;
 }
 .compDivLeft{
-  height: 20em;
+  height: 21em;
 }
 .compDivRight{
-  height: 20em;
+  height: 21em;
 }
 .compDivTitle{
   font-size: 2em;
@@ -374,14 +374,7 @@ a{
   width: 85%;
 }
 /* Fint de comp */
-/* Début de Expériences */
-.expTitle{
-  height: 1.6em;
-  font-size: 3em;
-  color: white;
-  text-shadow: 4px 2px black;
-  text-align: center;
-}
+/* Début de Expériences + Formation*/
 .expCard{
   padding-left: 2%;
   padding-right: 2%;
@@ -415,4 +408,27 @@ a{
   margin-top: 2%;
   float: left;
 }
-/* Fint de Expériences */
+/* Fint de Expériences + Formations*/
+/* Début de footer */
+.footer{
+  margin-top: 1em;
+  background-image:linear-gradient(#242730,60%, black);
+}
+.button-container-bottom{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-icon-2{
+  font-size: 50px;
+  padding: 10px;
+}
+
+.btn-github2{
+  color: #363b3f;
+}
+
+.btn-linkedIn2{
+  color: #0077b5;
+}
+/* Fint de footer */

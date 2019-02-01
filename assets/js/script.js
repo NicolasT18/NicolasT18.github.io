@@ -1,4 +1,4 @@
-//Fonction pour le scroll
+//Fuction for scroll
 window.onscroll = function() {scrollFunction(); navFunction()};
 function scrollFunction() {
     //afficher ou masquer le topBtn en fonction du scroll
@@ -8,7 +8,7 @@ function scrollFunction() {
         document.getElementById("topBtn").style.display = "none";
     }
 }
-// retourne en haut de la page
+// return to Top
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera

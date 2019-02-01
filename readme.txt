@@ -1,16 +1,16 @@
-(4) : Section Formation à Crée
+(6) : Crée un Footer
+(5.1.1) : Btn Contact et Embauchez-moi
 
 (5) : Section Moi à finir
 
-(5.1.1) : Btn Contact et Embauchez-moi
-
-(5.2) : Retirer les infos inutile du CV
-
-(6) : Crée un Footer
+(6.0.1) : Retirer les infos inutile du CV
 
 (6.1) : arranger la navbar
 
 (7) : refaire son CV papier
+
+
+
 
 
 (5){
@@ -26,14 +26,10 @@
 
 
 
-(6){
-    -Logo gitHub, Linkedin
-    -Nom, Prénom
-    -© Texier Nicolas CV. All rights reserved.
-            Design - by Jonathan Marandeau
-}
-
-
 (6.1){
   -petit décalage en mode sticky sur affichage tél
+  
+  option1{
+    -essayer de mettre une fonction pour su le javascript ne s'active que à partie d'un certain moment et remettre des col(test possible sur le bouton top)
+  }
 }

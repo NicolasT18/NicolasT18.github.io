@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -11,90 +12,121 @@
 </head>
 <body>
   <div class="container-fluid">
-    <!-- Début de header -->
+    <!-- Start of header -->
+    <!-- Left -->
     <div class="top row">
       <div class="githeader col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3">
-        <a href="https://github.com/NicolasT18/"><img class="logogithead" src="assets/img/gitlogo.png" alt="githead"> </a>
+        <a href="https://github.com/NicolasT18/"><img class="logogithead" src="assets/img/gitlogo.png" alt="githead">
+        </a>
       </div>
+      <!-- center top-->
       <div class="presheader col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
         <div class="toppres">
           <h1 class="titletop">Texier Nicolas</h1>
           <h2 class="titletop">Développeur web FullStack Junior</h2>
           <h2 class="titletop">Apprenant E2N</h2>
         </div>
+        <!-- center bottom -->
         <div class="downpres">
           <input class="cvBtn" type="submit" onclick="self.location.href='assets/file/CV(pdf).pdf'" value="CV PDF" />
           <input class="contactBtn" type="submit" onclick="contactFunction()" value="Contact" />
         </div>
       </div>
+      <!-- right -->
       <div class="inheader col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3">
-        <a href="https://www.linkedin.com/in/nicolas-texier-880450179/"><img class="logolinkhead" src="assets/img/linkedInlogo.png" alt="Mon GitHub" title="Mon GitHub" /></a>
+        <a href="https://www.linkedin.com/in/nicolas-texier-880450179/"><img class="logolinkhead" src="assets/img/linkedInlogo.png"
+            alt="Mon GitHub" title="Mon GitHub" /></a>
       </div>
     </div>
-    <!-- Fint de header -->
-    <!-- Début de navbar -->
+    <!-- End of header -->
+    <!-- Start of navbar -->
     <div class="row">
       <div class="cadrenav">
         <div class="topnav row" id="navbar">
+          <!-- left -->
           <div class="lefttopnav col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
             <a href="index.html"><img class="navpng" src="assets/img/home.png" alt="home"></a>
           </div>
+          <!-- center -->
           <div class="centertopnav col-10 col-sm-10 col-md-8 col-lg-6 col-xl-6">
-            <a href="me.html"><div class="navme col-3">Présentation</div></a>
-            <a href="comp.html"><div class="navme col-3">Compétences</div></a>
-            <a href="exp.html"><div class="navme col-3">experiences</div></a>
-            <a href="form.html"><div class="navme col-3">formations</div></a>
+            <a href="me.html">
+              <div class="navme col-3">Présentation</div>
+            </a>
+            <a href="comp.html">
+              <div class="navme col-3">Compétences</div>
+            </a>
+            <a href="exp.html">
+              <div class="navme col-3">experiences</div>
+            </a>
+            <a href="form.html">
+              <div class="navme col-3">formations</div>
+            </a>
           </div>
+          <!-- right -->
           <div class="righttopnav col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
             <a onclick="hireFunction()"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Fint de la navbar -->
-    <!-- Début de me -->
+    <!-- End of navbar -->
+    <!-- Start of me -->
     <div class="topmoi row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <!-- presentaion photo -->
       <div class="cadrephotomoi col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <img class="photomoipng" src="assets/img/Me/photomoi.jpg" alt="Ma photo" title="Ma photo">
       </div>
+      <!-- presentation informations -->
       <div class="infomoi col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <div class="informationmoi">information :</div>
         <div class="ligneinfomoi">
           <div class="titlemoi">AGE :</div>
           <div class="infomoi">19 ans</div>
         </div>
-        <div class="infosep"><hr class="sepme" width="70%" size="1" color="black"></div>
+        <div class="infosep">
+          <hr class="sepme" width="70%" size="1" color="black">
+        </div>
         <div class="ligneinfomoi">
           <div class="titlemoi">EMAIL :</div>
           <div class="infomoi">nicolas.texier18@gmail.com</div>
         </div>
-        <div class="infosep"><hr class="sepme" width="70%" size="1" color="black"></div>
+        <div class="infosep">
+          <hr class="sepme" width="70%" size="1" color="black">
+        </div>
         <div class="ligneinfomoi">
           <div class="titlemoi">Téléphone :</div>
           <div class="infomoi">06.21.24.06.84</div>
         </div>
-        <div class="infosep"><hr class="sepme" width="70%" size="1" color="black"></div>
+        <div class="infosep">
+          <hr class="sepme" width="70%" size="1" color="black">
+        </div>
         <div class="ligneinfomoi">
           <div class="titlemoi">ADRESSE :</div>
           <div class="infomoi">19 rue robert lebelle</div>
         </div>
-        <div class="infosep"><hr class="sepme" width="70%" size="1" color="black"></div>
+        <div class="infosep">
+          <hr class="sepme" width="70%" size="1" color="black">
+        </div>
         <div class="ligneinfomoi">
           <div class="titlemoi">LANGUE :</div>
           <div class="infomoi">Français</div>
         </div>
       </div>
     </div>
+    <!-- presentation bottom -->
     <div class="downmoi row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <div class="downmoi row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <hr class="sepdownme" width="95%" size="1" color="black">
       </div>
+      <!-- presentation me -->
       <div class="presdownmoi">
         <h2>Présentation :</h2>
+        <h2 class="presdownmoi">Hobbie :</h2>
       </div>
     </div>
+    <!-- presentation hobbie on carousel -->
     <div class="row">
-      <div id="carouselExampleIndicators" class="carouselMe carousel slide col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -107,14 +139,16 @@
             <img src="assets/img/Me/carouselImgDev.jpg" class="d-block w-100" alt="Dev">
             <div class="carousel-caption d-none d-md-block carouselLegend">
               <h5>Développement</h5>
-              <p>Ayant un esprit créatif et étant un adepte des jeux de logique, j'ai rapidement prix gout au développement.</p>
+              <p>Ayant un esprit créatif et étant un adepte des jeux de logique, j'ai rapidement prix gout au
+                développement.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/img/Me/carouselImgLogic.jpg" class="d-block w-100" alt="Dev">
             <div class="carousel-caption d-none d-md-block carouselLegend">
               <h5>Jeux de Logique</h5>
-              <p>Restons franc, je n'aime pas beaucoup retenir de gros pavé, en revanche j'adore tout ce qui amène à réfléchir !</p>
+              <p>Restons franc, je n'aime pas beaucoup retenir de gros pavé, en revanche j'adore tout ce qui amène à
+                réfléchir !</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -128,14 +162,16 @@
             <img src="assets/img/Me/carouselImgPlan.jpg" class="d-block w-100" alt="Dev">
             <div class="carousel-caption d-none d-md-block carouselLegend">
               <h5>Piano</h5>
-              <p>Bien que je ne pratique plus beaucoup ces derniers temps, j'aime improviser ou reproduire des musiques.</p>
+              <p>Bien que je ne pratique plus beaucoup ces derniers temps, j'aime improviser ou reproduire des
+                musiques.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/img/Me/carouselImgDraw.jpg" class="d-block w-100" alt="Dev">
             <div class="carousel-caption d-none d-md-block carouselLegend">
               <h5>Dessin</h5>
-              <p>Je ne dessine pas souvent car je ne suis pas fan du papier, mais je compte bien passer au numérique dès que possible.</p>
+              <p>Je ne dessine pas souvent car je ne suis pas fan du papier, mais je compte bien passer au numérique
+                dès que possible.</p>
             </div>
           </div>
         </div>
@@ -149,6 +185,23 @@
         </a>
       </div>
     </div>
+    <!-- End of me -->
+    <!-- Start of footer -->
+    <div class="row">
+        <footer class="footer col-12">
+          <div class="container text-center">
+            <div class="button-container-bottom">
+              <a class="btn-icon-2 btn-github2" href="https://github.com/NicolasT18" title="Suivez-moi sur GitHub"><i class="fab fa-github-square"></i></a>
+              <a class="btn-icon-2 btn-linkedIn2" href="https://www.linkedin.com/in/nicolas-texier-880450179/" title="Suivez-moi sur LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="title text-center">Nicolas Texier</div>
+            <div class="text-center text-muted">
+              <p>© Nicolas Texier CV. All rights reserved.<br>Design - by Nicolas Texier</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- End of footer -->
   </div>
   <button onclick="topFunction()" id="topBtn" title="Go to top"></button>
   <script src="assets/js/script.js"></script>
