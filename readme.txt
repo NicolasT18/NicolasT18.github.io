@@ -1,9 +1,7 @@
 (6) : Crée un Footer
 (5.1.1) : Btn Contact et Embauchez-moi
 
-(5) : Section Moi à finir
-
-(6.0.1) : Retirer les infos inutile du CV
+(5.2) : Section Moi à finir
 
 (6.1) : arranger la navbar
 
@@ -13,17 +11,17 @@
 
 
 
-(5){
-    - Changement de la photo
-    - Remplir la présentation
-}
-
-
 
 (5.1.1){
   -Chercher "Fenetre modele"
 }
 
+
+
+(5.2){
+    - Changement de la photo
+    - Remplir la présentation
+}
 
 
 (6.1){

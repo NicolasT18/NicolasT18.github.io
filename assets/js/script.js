@@ -1,5 +1,8 @@
 //Fuction for scroll
-window.onscroll = function() {scrollFunction(); navFunction()};
+window.onscroll = function () {
+    scrollFunction();
+    navFunction()
+};
 function scrollFunction() {
     //afficher ou masquer le topBtn en fonction du scroll
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -19,21 +22,21 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function navFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
 }
 //function for CV PDF click
-function cvFunction(){
+function cvFunction() {
     alert('Le CV PDF n\'est pas encore disponible');
 }
 //function for hire click
-function hireFunction(){
+function hireFunction() {
     alert('Cette option n\'est pas encore disponible');
 }
 //function for contact click
-function contactFunction(){
+function contactFunction() {
     alert('Cette option n\'est pas encore disponible');
 }
