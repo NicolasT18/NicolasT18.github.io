@@ -5,14 +5,10 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-    crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <title>CV Numérique</title>
 </head>
 
@@ -35,7 +31,7 @@
         <!-- center bottom -->
         <div class="downpres">
           <input class="cvBtn" type="submit" onclick="self.location.href='assets/file/CV(pdf).pdf'" value="CV PDF" />
-          <input class="contactBtn" type="submit" onclick="contactFunction()" value="Contact" />
+          <input class="contactBtn" id="contactBtn" type="submit" value="Contact" />
         </div>
       </div>
       <!-- right -->
@@ -47,7 +43,7 @@
     <!-- End of header -->
     <!-- Start of navbar -->
     <div class="row">
-      <div class="cadrenav">
+      <div class="cadrenav col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <div class="topnav row" id="navbar">
           <!-- left -->
           <div class="lefttopnav col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
@@ -70,7 +66,7 @@
           </div>
           <!-- right -->
           <div class="righttopnav col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
-            <a onclick="hireFunction()"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
+            <a id="contactBtn"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
           </div>
         </div>
       </div>
@@ -92,6 +88,22 @@
       </a>
     </div>
     <!-- End of menu -->
+    <div class="row">
+      <div id="oModal" class="oModal">
+        <div>
+          <header>
+            <a href="#fermer" title="Fermer la fenêtre" class="droite">X</a>
+            <h2>Exemple de fenêtre « modal » stylisée </h2>
+          </header>
+          <section>
+            <p>Description du message. </p>
+          </section>
+          <footer class="cf">
+            <a href="#fermer" class="btn droite" title="Fermer la fenêtre">Fermer</a>
+          </footer>
+        </div>
+      </div>
+    </div>
     <!-- Start of footer -->
     <div class="row">
       <footer class="footer col-12">

@@ -2,10 +2,6 @@
   font-family: "title";
   src:url("../fonts/title.ttf");
 }
-@font-face {
-    font-family: "select";
-    src: url("../fonts.select.ttf");
-}
 @media screen and (max-width:993px){
   .githeader, .inheader{
     display: none;
@@ -109,7 +105,6 @@ a{
 }
 .downpres{
   margin-top: 10%;
-  font-family: "select";
 }
 .logolinkhead{
   width: 10em;
@@ -124,7 +119,6 @@ a{
 /* Fint du top */
 /* Début de la navbar */
 .cadrenav{
-  width: 99.2%;
   height: 2.5em;
 }
 .topnav{
@@ -166,8 +160,7 @@ a{
   transition-duration: 0.3s;
 }
 .sticky{
-  width: 105%;
-  padding-right: 4.2%;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -319,7 +312,7 @@ a{
   float: left;
 }
 .compDivLeft{
-  height: 21em;
+  height: 26em;
 }
 .compDivRight{
   height: 21em;
