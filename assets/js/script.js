@@ -19,32 +19,27 @@ $(function () {
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
     // Get the navbar
-    var navbar = document.getElementById("navbar");
+    var $navbar = document.getElementById("navbar");
     // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
+    var $sticky = navbar.offsetTop;
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function navFunction() {
-        if (window.pageYOffset >= sticky) {
+        if (window.pageYOffset >= $sticky) {
             if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                navbar.classList.add("sticky")
+                $navbar.classList.add("sticky")
             } else {
-                navbar.classList.remove("sticky");
+                $navbar.classList.remove("sticky");
             }
         } else {
-            navbar.classList.remove("sticky");
+            $navbar.classList.remove("sticky");
         }
-    }
-    //function for CV PDF click
-    function cvFunction() {
-        alert('Le CV PDF n\'est pas encore disponible');
-    }
-    //function for hire click
-    function hireFunction() {
-        alert('Cette option n\'est pas encore disponible');
     }
 
     //function for contact click
-    $('#contactBtn').click(function(){
-        alert('test');
+    $('.contactBtn').click(function () {
+        $('.bg-modal').css('display', 'flex');
+    });
+    $('.bg-modal , .modal-close').click(function(){
+        $('.bg-modal').css('display', 'none');
     });
 });

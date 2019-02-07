@@ -3,12 +3,17 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
   <title>CV Numérique</title>
 </head>
 
@@ -31,7 +36,7 @@
         <!-- center bottom -->
         <div class="downpres">
           <input class="cvBtn" type="submit" onclick="self.location.href='assets/file/CV(pdf).pdf'" value="CV PDF" />
-          <input class="contactBtn" id="contactBtn" type="submit" value="Contact" />
+          <input class="contactBtn" type="submit" value="Contact" />
         </div>
       </div>
       <!-- right -->
@@ -66,7 +71,7 @@
           </div>
           <!-- right -->
           <div class="righttopnav col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
-            <a id="contactBtn"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
+            <a class="contactBtn"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
           </div>
         </div>
       </div>
@@ -88,22 +93,6 @@
       </a>
     </div>
     <!-- End of menu -->
-    <div class="row">
-      <div id="oModal" class="oModal">
-        <div>
-          <header>
-            <a href="#fermer" title="Fermer la fenêtre" class="droite">X</a>
-            <h2>Exemple de fenêtre « modal » stylisée </h2>
-          </header>
-          <section>
-            <p>Description du message. </p>
-          </section>
-          <footer class="cf">
-            <a href="#fermer" class="btn droite" title="Fermer la fenêtre">Fermer</a>
-          </footer>
-        </div>
-      </div>
-    </div>
     <!-- Start of footer -->
     <div class="row">
       <footer class="footer col-12">
@@ -122,6 +111,29 @@
       </footer>
     </div>
     <!-- End of footer -->
+    <!-- Start of Contact -->
+    <div class="row">
+      <div class="bg-modal">
+        <div class="modal-content">
+          <div class="modal-close">+</div>
+          <img src="assets/img/Me/photomoi.gif" alt="">
+          <form class="modal-contact">
+            <h3 class="modal-title">Email :</h3>
+            <p class="modal-text">nicolas.texier18@gmail.com</p>
+            <h3 class="modal-title">Numéro :</h3>
+            <p class="modal-text">06.21.24.06.84</p>
+          </form>
+          <div class="modal-logo">
+            <a class="btn-icon-2 btn-github2" href="https://github.com/NicolasT18" title="Suivez-moi sur GitHub"><i
+                class="fab fa-github-square"></i></a>
+            <a class="btn-icon-2 btn-linkedIn2 test" href="https://www.linkedin.com/in/nicolas-texier-880450179/" title="Suivez-moi sur LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="modal-div"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Contact -->
   </div>
   <button onclick="topFunction()" id="topBtn" title="Go to top"></button>
   <script src="assets/js/script.js"></script>

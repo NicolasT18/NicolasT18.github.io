@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
@@ -35,7 +36,7 @@
         <!-- center bottom -->
         <div class="downpres">
           <input class="cvBtn" type="submit" onclick="self.location.href='assets/file/CV(pdf).pdf'" value="CV PDF" />
-          <input class="contactBtn" type="submit" onclick="contactFunction()" value="Contact" />
+          <input class="contactBtn" type="submit" value="Contact" />
         </div>
       </div>
       <!-- right -->
@@ -70,7 +71,7 @@
           </div>
           <!-- right -->
           <div class="righttopnav col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
-            <a onclick="hireFunction()"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
+            <a class="contactBtn"> <img class="navpng" src="assets/img/contact.png" alt="contact"> </a>
           </div>
         </div>
       </div>
@@ -151,8 +152,8 @@
               <div class="compProgress"><progress class="compProgressbar" value="70" max="100"></progress></div>
             </div>
             <div class="compDiv">
-                <div class="compTitle"><strong>MATERIALIZE : 55%</strong></div>
-                <div class="compProgress"><progress class="compProgressbar" value="55" max="100"></progress></div>
+              <div class="compTitle"><strong>MATERIALIZE : 55%</strong></div>
+              <div class="compProgress"><progress class="compProgressbar" value="55" max="100"></progress></div>
             </div>
           </div>
         </div>
@@ -230,6 +231,29 @@
       </footer>
     </div>
     <!-- End of footer -->
+    <!-- Start of Contact -->
+    <div class="row">
+      <div class="bg-modal">
+        <div class="modal-content">
+          <div class="modal-close">+</div>
+          <img src="assets/img/Me/photomoi.gif" alt="">
+          <form class="modal-contact">
+            <h3 class="modal-title">Email :</h3>
+            <p class="modal-text">nicolas.texier18@gmail.com</p>
+            <h3 class="modal-title">Numéro :</h3>
+            <p class="modal-text">06.21.24.06.84</p>
+          </form>
+          <div class="modal-logo">
+            <a class="btn-icon-2 btn-github2" href="https://github.com/NicolasT18" title="Suivez-moi sur GitHub"><i
+                class="fab fa-github-square"></i></a>
+            <a class="btn-icon-2 btn-linkedIn2 test" href="https://www.linkedin.com/in/nicolas-texier-880450179/" title="Suivez-moi sur LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="modal-div"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Contact -->
   </div>
   <button onclick="topFunction()" id="topBtn" title="Go to top"></button>
   <script src="assets/js/script.js"></script>
