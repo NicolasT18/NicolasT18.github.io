@@ -249,10 +249,23 @@ a{
 }
 .presdownmoi{
   margin-top: 0.5%;
-  font-size: 150%;
   padding-left: 1.5%;
   color: white;
+}
+.pres-title{
+  margin-bottom: 0.5em;
+}
+.shadow-title{
   text-shadow: 4px 2px black;
+  font-size: 3em;
+}
+.shadow-text{
+  font-size: 1.1em;  
+  text-shadow: 4px 2px black;
+  font-weight: bold;
+}
+.hobbie-title{
+  margin-top: 1em;
 }
 .carouselLegend{
   background: radial-gradient(#000000,70%, #0000);
@@ -462,7 +475,7 @@ a{
   margin-left: 40%;
 }
 .modal-contact{
-  margin-top: 4%;
+  margin-top: 2%;
   margin-left: 8%;
 }
 .modal-title{
