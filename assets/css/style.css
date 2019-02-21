@@ -76,7 +76,7 @@ a{
 /* Fint du bouton top */
 /* Début du top */
 .top{
-  height: 25rem;
+  height: 25em;
   background-image: url("../img/backgroundtop.png");
 }
 .logogithead{
@@ -123,7 +123,7 @@ a{
 }
 .topnav{
   height: 2.5em;
-  background-color: #297E6F;
+  background-color: #16a085;
 }
 .lefttopnav{
   text-align: right;
@@ -140,7 +140,7 @@ a{
   transition-duration: 0.4s;
 }
 .centertopnav div:hover{
-  background-color: #007bff;
+  background-color: #1abc9c;
   border-radius: 3em;
   transition-duration: 0.4s;
 }

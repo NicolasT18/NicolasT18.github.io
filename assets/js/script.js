@@ -1,4 +1,5 @@
 $(function () {
+
     //Fuction for scroll
     window.onscroll = function () {
         scrollFunction();
@@ -43,3 +44,14 @@ $(function () {
         $('.bg-modal').css('display', 'none');
     });
 });
+var app = angular.module('app', ['ngRoute']);
+
+app.config(function($routeProvider){
+    $routeProvider
+    .when('/', {templateUrl: 'home.html'})
+    .when('/me', {templateUrl: 'me.html'})
+    .when('/comp', {templateUrl: 'comp.html'})
+    .when('/exp', {templateUrl: 'exp.html'})
+    .when('/form', {templateUrl: 'form.html'})
+    .otherwise({redirectTo: '/'});
+});carouselExampleIndicators
