@@ -103,8 +103,18 @@ a{
   font-family: "title";
   text-shadow: 4px 2px black;
 }
+
+.language-button {
+  margin-top: 2%;
+}
+
+.language-button:hover {
+  cursor: pointer;
+}
+
 .downpres{
-  margin-top: 10%;
+  margin-top: 2%;
+  cursor: pointer;
 }
 .logolinkhead{
   width: 10em;
@@ -392,7 +402,7 @@ a{
   box-shadow: 8px 8px 0px #aaa;
 }
 .expDivCard{
-  height: 10em;
+  height: 12em;
   float: left;
   background-color: #546e7a;
   color: white;

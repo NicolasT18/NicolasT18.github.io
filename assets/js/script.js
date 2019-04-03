@@ -7,7 +7,7 @@ $(function () {
     };
 
     function scrollFunction() {
-        //afficher ou masquer le topBtn en fonction du scroll
+        //show or mhide the topBtn in function to scroll
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("topBtn").style.display = "block";
         } else {
@@ -43,10 +43,19 @@ $(function () {
     $('.bg-modal , .modal-close').click(function(){
         $('.bg-modal').css('display', 'none');
     });
-});
-var app = angular.module('app', ['ngRoute']);
 
-app.config(function($routeProvider){
+    //function for language click
+    $('.english-button').click(function () {
+        document.location.href= 'indexEn.html';
+    });
+    $('.french-button').click(function(){
+        document.location.href= 'index.html';
+    });
+});
+var appFR = angular.module('appFR', ['ngRoute']);
+var appEN = angular.module('appEN', ['ngRoute']);
+
+appFR.config(function($routeProvider){
     $routeProvider
     .when('/', {templateUrl: 'home.html'})
     .when('/me', {templateUrl: 'me.html'})
@@ -54,4 +63,14 @@ app.config(function($routeProvider){
     .when('/exp', {templateUrl: 'exp.html'})
     .when('/form', {templateUrl: 'form.html'})
     .otherwise({redirectTo: '/'});
-});carouselExampleIndicators
+});
+
+appEN.config(function($routeProvider){
+    $routeProvider
+    .when('/', {templateUrl: 'homeEn.html'})
+    .when('/me', {templateUrl: 'meEn.html'})
+    .when('/comp', {templateUrl: 'compEn.html'})
+    .when('/exp', {templateUrl: 'expEn.html'})
+    .when('/form', {templateUrl: 'formEn.html'})
+    .otherwise({redirectTo: '/'});
+});
