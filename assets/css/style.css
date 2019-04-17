@@ -14,6 +14,9 @@
   .compDivLeft{
     border-right: 0.1em solid black;
   }
+  .sepcompdown{
+    border-top: 0.1em solid black;
+  }
   .compOS{
     margin-bottom: -1.5em;
   }
@@ -285,7 +288,7 @@ a{
 /* Début de comp */
 .compOS{
   height: 10em;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 .progressBar{
   width: 80%;
@@ -359,24 +362,14 @@ a{
 .compProgressbar{
   width: 90%;
 }
-.sepcompdown{
-  border-top: 0.1em solid black;
-}
 .downcomp{
   height: 10em;
-  margin-top: 0.5em;
 }
 .syscomp{
   height: 70%;
 }
 .syscomp div{
   float: left;
-}
-.versioComptitle{
-  font-size: 2em;
-  color: white;
-  text-align: center;
-  text-shadow: 4px 2px black;
 }
 .progressBarGithubLvl{
   width: 60%;
