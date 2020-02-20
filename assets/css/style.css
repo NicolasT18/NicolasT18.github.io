@@ -1,106 +1,127 @@
 @font-face {
   font-family: "title";
-  src:url("../fonts/title.ttf");
+  src: url("../fonts/title.ttf");
 }
-@media screen and (max-width:993px){
-  .githeader, .inheader{
+
+@media screen and (max-width:993px) {
+  .githeader, .inheader {
     display: none;
   }
 }
-@media screen and (min-width:768px){
-  .cadrephotomoi{
+
+@media screen and (min-width:768px) {
+  .cadrephotomoi {
     border-right: 0.1em solid black;
   }
-  .compDivLeft{
+
+  .compDivLeft {
     border-right: 0.1em solid black;
   }
-  .sepcompdown{
+
+  .sepcompdown {
     border-top: 0.1em solid black;
   }
-  .compOS{
+
+  .compOS {
     margin-bottom: -1.5em;
   }
+
   .expDivCardHr {
-  background-color: black;
+    background-color: black;
+  }
 }
-}
-@media screen and (max-width:767px){
-  .compOS{
+
+@media screen and (max-width:767px) {
+  .compOS {
     margin-bottom: 4em;
   }
-  .expDivCard{
-  border-top: 0.04em solid black;
-}
-}
-@media screen and (min-width:551px){
-  .centertopnav{
-  line-height: 2em;
-  font-size: 120%;
+
+  .expDivCard {
+    border-top: 0.04em solid black;
   }
 }
-@media screen and (max-width:550px){
-  .centertopnav{
-  line-height: 3em;
-  font-size: 90%;
+
+@media screen and (min-width:551px) {
+  .centertopnav {
+    line-height: 2em;
+    font-size: 120%;
   }
 }
-body{
+
+@media screen and (max-width:550px) {
+  .centertopnav {
+    line-height: 3em;
+    font-size: 90%;
+  }
+}
+
+body {
   background-color: #242730;
 }
-a{
+
+a {
   outline-style: none;
 }
-.title{
+
+.title {
   height: 1.6em;
   font-size: 3em;
   color: white;
   text-shadow: 4px 2px black;
   text-align: center;
 }
+
 /* Début du bouton top */
 #topBtn {
-    display: none;
-    position: fixed;
-    bottom: 1em;
-    right: 1.5em;
-    border: none;
-    background-image: url(../img/topBtn.png);
-    background-size: 100%;
-    cursor: pointer;
-    padding: 1.3em;
-    border-radius: 3em;
-    font-size: 1.1em;
-    outline-style:none;
-    z-index: 1;
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 1.5em;
+  border: none;
+  background-image: url(../img/topBtn.png);
+  background-size: 100%;
+  cursor: pointer;
+  padding: 1.3em;
+  border-radius: 3em;
+  font-size: 1.1em;
+  outline-style: none;
+  z-index: 1;
 }
+
 #topBtn:hover {
-    background-color: #555;
+  background-color: #555;
 }
+
 /* Fint du bouton top */
 /* Début du top */
-.top{
+.top {
   height: 25em;
   background-image: url("../img/backgroundtop.png");
 }
-.logogithead{
+
+.logogithead {
   width: 10em;
   margin-top: 7em;
   float: right;
   transition-duration: 0.3s;
 }
-.logogithead:hover{
+
+.logogithead:hover {
   width: 12em;
   margin-top: 6em;
   transition-duration: 0.3s;
 }
-.presheader{
+
+.presheader {
   text-align: center;
 }
-.toppres{
+
+.toppres {
   margin-top: 5em;
-  background: radial-gradient(#1273F3,2%, #0000);
+  background: radial-gradient(#1273F3, 2%, #0000);
 }
-.titletop{
+
+.titletop {
   font-size: 2.7em;
   color: white;
   font-family: "title";
@@ -115,34 +136,40 @@ a{
   cursor: pointer;
 }
 
-.downpres{
+.downpres {
   margin-top: 2%;
   cursor: pointer;
 }
-.logolinkhead{
+
+.logolinkhead {
   width: 10em;
   margin-top: 7em;
   transition-duration: 0.3s;
 }
-.logolinkhead:hover{
+
+.logolinkhead:hover {
   width: 12em;
   margin-top: 6em;
   transition-duration: 0.3s;
 }
+
 /* Fint du top */
 /* Début de la navbar */
-.cadrenav{
+.cadrenav {
   height: 2.5em;
 }
-.topnav{
+
+.topnav {
   height: 2.5em;
   background-color: #16a085;
 }
-.lefttopnav{
+
+.lefttopnav {
   text-align: right;
   padding-right: 0%;
 }
-.centertopnav div{
+
+.centertopnav div {
   width: 25%;
   height: 100%;
   float: left;
@@ -152,41 +179,49 @@ a{
   text-shadow: 2px 2px black;
   transition-duration: 0.4s;
 }
-.centertopnav div:hover{
+
+.centertopnav div:hover {
   background-color: #1abc9c;
   border-radius: 3em;
   transition-duration: 0.4s;
 }
-.righttopnav{
+
+.righttopnav {
   text-align: left;
   padding-left: 0%;
 }
-.navpng{
+
+.navpng {
   width: 2em;
   padding-top: 0.3em;
   transition-duration: 0.3s;
 }
-.navpng:hover{
+
+.navpng:hover {
   width: 2.7em;
   padding-top: 0em;
   cursor: pointer;
   transition-duration: 0.3s;
 }
-.sticky{
+
+.sticky {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
 }
+
 /* Fint de la navbar */
 /* Début du menu */
-.select{
+.select {
   min-height: 31.4em;
 }
-.select a{
+
+.select a {
   text-decoration: none;
 }
-.select a div{
+
+.select a div {
   height: 80%;
   line-height: 4.5em;
   margin-top: 0.5em;
@@ -199,98 +234,121 @@ a{
   background-position-x: 50%;
   transition-duration: 0.3s;
 }
-.select a div:hover{
+
+.select a div:hover {
   border-radius: 3em;
   background-size: 250%;
   transition-duration: 0.3s;
 }
-.selectme{
+
+.selectme {
   background-image: url("../img/index/selectmoi.jpeg");
 }
-.selectcomp{
+
+.selectcomp {
   background-image: url("../img/index/selectcomp.jpeg");
 }
-.selectexp{
+
+.selectexp {
   background-image: url("../img/index/selectexp.jpg");
 }
-.selectform{
+
+.selectform {
   background-image: url("../img/index/selectform.jpeg");
 }
+
 /* Fint du menu */
 /* Début de me */
-.topmoi{
+.topmoi {
   margin-top: 1em;
   min-height: 30em;
 }
-.cadrephotomoi{
+
+.cadrephotomoi {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.photomoipng{
+
+.photomoipng {
   width: 50%;
   border-radius: 50%;
   transition-duration: 0.3s;
 }
-.photomoipng:hover{
+
+.photomoipng:hover {
   border-radius: 20%;
   transition-duration: 0.3s;
 }
-.sepme{
+
+.sepme {
   border-top: 0.1em solid black;
 }
-.informationmoi{
+
+.informationmoi {
   font-size: 325%;
   color: white;
   text-shadow: 4px 2px black;
 }
-.ligneinfomoi{
+
+.ligneinfomoi {
   margin-top: 1em;
   color: white;
   text-shadow: 3px 2px black;
   transition-duration: 0.3s;
 }
-.ligneinfomoi:hover{
+
+.ligneinfomoi:hover {
   font-size: 120%;
   transition-duration: 0.3s;
 }
-.sepme{
+
+.sepme {
   margin-left: 2%;
 }
-.sepdownme{
+
+.sepdownme {
   border-top: 0.1em solid black;
 }
-.presdownmoi{
+
+.presdownmoi {
   margin-top: 0.5%;
   padding-left: 1.5%;
   color: white;
 }
-.pres-title{
+
+.pres-title {
   margin-bottom: 0.5em;
 }
-.shadow-title{
+
+.shadow-title {
   text-shadow: 4px 2px black;
   font-size: 3em;
 }
-.shadow-text{
-  font-size: 1.1em;  
+
+.shadow-text {
+  font-size: 1.1em;
   text-shadow: 4px 2px black;
   font-weight: bold;
 }
-.hobbie-title{
+
+.hobbie-title {
   margin-top: 1em;
 }
-.carouselLegend{
-  background: radial-gradient(#000000,70%, #0000);
+
+.carouselLegend {
+  background: radial-gradient(#000000, 70%, #0000);
   border-radius: 50%;
 }
+
 /* Fint de me */
 /* Début de comp */
-.compOS{
+.compOS {
   height: 10em;
   margin-top: 3em;
 }
-.progressBar{
+
+.progressBar {
   width: 80%;
   height: 30%;
   margin-top: 4%;
@@ -298,22 +356,26 @@ a{
   background-color: #041634;
   border-radius: 1em;
 }
-.nameProgressBar{
+
+.nameProgressBar {
   width: 15%;
   font-size: 70%;
   color: white;
   line-height: 2.5em;
   text-align: center;
 }
-.progressBarDiv{
+
+.progressBarDiv {
   height: 90%;
 }
-.progressBarLvl{
+
+.progressBarLvl {
   height: 100%;
   background-color: #0b46a3;
   border-bottom-left-radius: 2em;
 }
-.pourcentageLvl{
+
+.pourcentageLvl {
   height: 100%;
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;
@@ -322,126 +384,156 @@ a{
   padding-right: 1%;
   line-height: 2em;
 }
-.progressBarWindowsLvl{
+
+.progressBarWindowsLvl {
   width: 69.5%;
 }
-.pourcentageWindows{
+
+.pourcentageWindows {
   width: 15.5%;
 }
-.progressBarUbuntuLvl{
+
+.progressBarUbuntuLvl {
   width: 60%;
 }
-.pourcentageUbuntu{
+
+.pourcentageUbuntu {
   width: 25%;
 }
-.topcomp div{
+
+.topcomp div {
   float: left;
 }
-.compDivLeft{
+
+.compDivLeft {
   height: 26em;
 }
-.compDivRight{
+
+.compDivRight {
   height: 21em;
 }
-.compDivTitle{
+
+.compDivTitle {
   font-size: 2em;
   color: white;
   text-align: center;
   text-shadow: 4px 2px black;
 }
-.compDiv{
+
+.compDiv {
   width: 100%;
   margin-top: 3%;
 }
-.compTitle{
+
+.compTitle {
   color: white;
 }
-.compProgress{
+
+.compProgress {
   width: 100%;
 }
-.compProgressbar{
+
+.compProgressbar {
   width: 90%;
 }
-.downcomp{
+
+.downcomp {
   height: 10em;
 }
-.syscomp{
+
+.syscomp {
   height: 70%;
 }
-.syscomp div{
+
+.syscomp div {
   float: left;
 }
-.progressBarGithubLvl{
+
+.progressBarGithubLvl {
   width: 60%;
 }
-.pourcentageGithub{
+
+.pourcentageGithub {
   width: 25%;
 }
-.progressBarGitlabLvl{
+
+.progressBarGitlabLvl {
+  width: 35.3%;
 }
-.pourcentageGitlab{
-  width: 85%;
+
+.pourcentageGitlab {
+  width: 49.7%;
 }
+
 /* Fint de comp */
 /* Début de Expériences + Formation*/
-.expCard{
+.expCard {
   padding-left: 2%;
   padding-right: 2%;
   margin-top: 2em;
 }
-.expCardContent{
+
+.expCardContent {
   width: 100%;
   height: 100%;
   box-shadow: 8px 8px 0px #aaa;
 }
-.expDivCard{
+
+.expDivCard {
   height: 12em;
   float: left;
   background-color: #546e7a;
   color: white;
 }
-.expDivCard h2, .expDivCard h5, .expDivCard p, .expDivCard ul{
+
+.expDivCard h2, .expDivCard h5, .expDivCard p, .expDivCard ul {
   margin-left: 4%;
   margin-top: 2%;
 }
-.expDivCard h2{
-  font-weight : bolder;
+
+.expDivCard h2 {
+  font-weight: bolder;
 }
-.expDivCard h4{
+
+.expDivCard h4 {
   margin-left: 6%;
-  font-weight : bolder;
+  font-weight: bolder;
 }
+
 .expDivCardHr {
   width: 0.04em;
-  height:85%;
+  height: 85%;
   margin-top: 2%;
   float: left;
 }
+
 /* Fint de Expériences + Formations*/
 /* Début de footer */
-.footer{
+.footer {
   margin-top: 1em;
-  background-image:linear-gradient(#242730,60%, black);
+  background-image: linear-gradient(#242730, 60%, black);
 }
-.button-container-bottom{
+
+.button-container-bottom {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.btn-icon-2{
+.btn-icon-2 {
   font-size: 50px;
   padding: 10px;
 }
 
-.btn-github2{
+.btn-github2 {
   color: #363b3f;
 }
 
-.btn-linkedIn2{
+.btn-linkedIn2 {
   color: #0077b5;
 }
+
 /* Fint de footer */
-.bg-modal{
+.bg-modal {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -455,7 +547,7 @@ a{
   display: none;
 }
 
-.modal-content{
+.modal-content {
   width: 60em;
   height: 30em;
   background-color: #297E6F;
@@ -463,7 +555,8 @@ a{
   position: relative;
   float: left;
 }
-.modal-close{
+
+.modal-close {
   position: absolute;
   top: 0;
   right: 0.5em;
@@ -471,25 +564,31 @@ a{
   transform: rotate(45deg);
   cursor: pointer;
 }
-.modal-content img{
+
+.modal-content img {
   width: 20%;
   border-radius: 50%;
   margin-top: 2%;
   margin-left: 40%;
 }
-.modal-contact{
+
+.modal-contact {
   margin-top: 2%;
   margin-left: 8%;
 }
-.modal-title{
+
+.modal-title {
   font-weight: bold;
 }
-.modal-text{
+
+.modal-text {
   margin-left: 2%;
 }
-.modal-logo{
+
+.modal-logo {
   margin-left: 44%;
 }
-.test{
+
+.test {
   color: #363b3f;
 }
