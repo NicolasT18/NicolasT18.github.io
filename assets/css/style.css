@@ -96,7 +96,8 @@ a {
 /* Début du top */
 .top {
   height: 25em;
-  background-image: url("../img/backgroundtop.png");
+  background-position-y: 70rem;
+  background-image: url("../img/téléchargementtest.jpg");
 }
 
 .logogithead {
@@ -117,8 +118,7 @@ a {
 }
 
 .toppres {
-  margin-top: 9em;
-  background: radial-gradient(#1273F3, 2%, #0000);
+  margin-top: 8.5em;
 }
 
 .titletop {
